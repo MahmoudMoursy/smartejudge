@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.smartejudge.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Allow important pages
+Allow: /index.html
+Allow: /team/
+Allow: /services/
+Allow: /contact/
+Allow: /about/
+
+# Block common bot traps
+Disallow: /search?
+Disallow: /?q=
+Disallow: /?s=
+Disallow: /?query=

@@ -33,6 +33,27 @@
 </head>
 
 <body>
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h4 class="top-title">Welcome to the website of Judge Dr.Eyad Alsamhan – The Best Arabic Immigration
+                        Attorney in the U.S</h4>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="tel:8016912890" class="phone-number">
+                        <i class="fas fa-phone-alt"></i>
+                        (801) 691-2890
+                    </a>
+                    <!-- <a href="https://calendly.com/eyad-ayed/consultation?month=2025-08" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-danger ">Book
+                    Consultation</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
@@ -49,49 +70,137 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
+                        <a class="nav-link active" href="#home" data-lang="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
+                        <a class="nav-link" href="#team" data-lang="team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#trust">Trust</a>
+                        <a class="nav-link" href="#trust" data-lang="trust">Trust</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#services" data-lang="services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">Reviews</a>
+                        <a class="nav-link" href="#testimonials" data-lang="testimonials">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#faqs">FAQs</a>
+                        <a class="nav-link" href="#faqs" data-lang="faqs">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#map">Location</a>
+                        <a class="nav-link" href="#map" data-lang="map">Location</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact" data-lang="contact">Contact</a>
                     </li>
                 </ul>
-                <a href="#contact" class="btn btn-danger">Book Consultation</a>
+                <!-- Language Dropdown -->
+                <div class="navbar-nav me-3">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe me-1"></i>
+                            <span id="currentLanguage">English</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" data-lang="en"><i
+                                        class="fas fa-flag me-2"></i>English</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="ar"><i
+                                        class="fas fa-flag me-2"></i>العربية</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="fr"><i
+                                        class="fas fa-flag me-2"></i>Français</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="es"><i
+                                        class="fas fa-flag me-2"></i>Español</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="fa"><i
+                                        class="fas fa-flag me-2"></i>فارسی</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="https://www.smartejudge.com/Login.aspx" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-user text-danger"></i>
+                </a>
+                
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Video -->
     <section id="home" class="hero-section">
-        <div class="hero-overlay">
+        <!-- Video Background -->
+        <div class="video-background">
+            <img src="https://www.usimmivisa.com/cms/thumbnails/24/1257x509/assets/mainstage/mainstage-bg-tablet.jpg?quality=100&tiny=False"
+                alt="Hero Image" class="hero-background-image">
+            <div class="video-overlay"></div>
+        </div>
+
+        <!-- Content Overlay -->
+        <div class="hero-content">
             <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-10">
-                        <h1 class="hero-title">SMART IMMIGRATION SOLUTIONS</h1>
-                        <p class="hero-subtitle">Empowering Your EB2 NIW Journey with Cutting-Edge AI Technology</p>
-                        <div class="hero-buttons">
-                            <a href="#contact" class="btn btn-danger btn-lg me-3">Book a Consultation</a>
-                            <a href="#services" class="btn btn-outline-light btn-lg">Learn More</a>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-text-content">
+                            <div class="hero-badge">
+                                <i class="fas fa-star"></i>
+                                <span data-translate="heroBadge">Professional Immigration Services</span>
+                            </div>
+                            <h2 class="hero-title" data-translate="heroTitle">Are you looking for an immigration lawyer?
+                            </h2>
+                            <p class="hero-subtitle" data-translate="heroSubtitle">Dr. Ayad Al-Samhan is the best
+                                Arab-American immigration and business lawyer with over 15 years of experience.</p>
+                            <div class="hero-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-translate="heroFeature1">98% Success Rate</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-translate="heroFeature2">AI-Powered Solutions</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-translate="heroFeature3">Expert Legal Team</span>
+                                </div>
+                            </div>
+                            <div class="hero-buttons">
+                                <a href="https://calendly.com/eyad-ayed/consultation?month=2025-08" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-calendar-check me-2"></i>
+                                    <span data-translate="bookConsultation">Book Consultation</span>
+                                </a>
+                                <a href="#services" class="btn btn-outline-light btn-lg ms-3">
+                                    <i class="fas fa-info-circle me-2"></i>
+                                    <span data-translate="learnMore">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Enhanced white overlay for right side -->
+                        <div class="hero-white-overlay">
+                            <div class="hero-stats">
+                                <div class="stat-card">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label" data-translate="statSuccessfulCases">Successful Cases</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">15+</div>
+                                    <div class="stat-label" data-translate="statYearsExperience">Years Experience</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">24/7</div>
+                                    <div class="stat-label" data-translate="statAISupport">AI Support</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </section>
@@ -104,28 +213,28 @@
                     <div class="stat-item">
                         <i class="fas fa-users fa-3x text-danger mb-3"></i>
                         <h3 class="stat-number" data-target="500">0</h3>
-                        <p>Successful Cases</p>
+                        <p data-translate="successfulCases">Successful Cases</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="stat-item">
                         <i class="fas fa-award fa-3x text-danger mb-3"></i>
                         <h3 class="stat-number" data-target="98">0</h3>
-                        <p>Success Rate %</p>
+                        <p data-translate="successRate">Success Rate %</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="stat-item">
                         <i class="fas fa-clock fa-3x text-danger mb-3"></i>
                         <h3 class="stat-number" data-target="15">0</h3>
-                        <p>Years Experience</p>
+                        <p data-translate="yearsExperience">Years Experience</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="stat-item">
                         <i class="fas fa-robot fa-3x text-danger mb-3"></i>
                         <h3 class="stat-number" data-target="24">0</h3>
-                        <p>AI-Powered Hours</p>
+                        <p data-translate="aiPoweredHours">AI-Powered Hours</p>
                     </div>
                 </div>
             </div>
@@ -137,9 +246,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Our Expert Team</h2>
-                    <p class="lead">Meet the legal and technology experts behind our AI-powered immigration solutions
-                    </p>
+                    <h2 class="section-title" data-translate="ourExpertTeam">Our Expert Team</h2>
+                    <p class="lead" data-translate="teamSubtitle">Meet the legal and technology experts behind our
+                        AI-powered immigration solutions</p>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -153,9 +262,10 @@
                             </div>
                         </div>
                         <div class="team-info">
-                            <h5>Judge Eyad Alsamhan</h5>
-                            <p>Ph.D | LL.M | B.A. (J.D.)</p>
-                            <small class="text-muted">Managing Partner & Legal Expert</small>
+                            <h5 data-translate="teamEyadTitle">Judge Eyad Alsamhan</h5>
+                            <p data-translate="teamEyadDegree">Ph.D | LL.M | B.A. (J.D.)</p>
+                            <small class="text-muted" data-translate="teamEyadRole">Managing Partner & Legal
+                                Expert</small>
                         </div>
                     </div>
                 </div>
@@ -169,9 +279,10 @@
                             </div>
                         </div>
                         <div class="team-info">
-                            <h5>Attorney Muntaha Hijazi</h5>
-                            <p>Local representative in Jordan</p>
-                            <small class="text-muted">Regional Legal Coordinator</small>
+                            <h5 data-translate="teamMuntahaTitle">Attorney Muntaha Hijazi</h5>
+                            <p data-translate="teamMuntahaDegree">Local representative in Jordan</p>
+                            <small class="text-muted" data-translate="teamMuntahaRole">Regional Legal
+                                Coordinator</small>
                         </div>
                     </div>
                 </div>
@@ -185,9 +296,9 @@
                             </div>
                         </div>
                         <div class="team-info">
-                            <h5>Mohammad Al Nobani</h5>
-                            <p>Software Engineer & AI Expert</p>
-                            <small class="text-muted">Chief Technology Officer</small>
+                            <h5 data-translate="teamMohammadTitle">Mohammad Al Nobani</h5>
+                            <p data-translate="teamMohammadDegree">Software Engineer & AI Expert</p>
+                            <small class="text-muted" data-translate="teamMohammadRole">Chief Technology Officer</small>
                         </div>
                     </div>
                 </div>
@@ -201,9 +312,9 @@
                             </div>
                         </div>
                         <div class="team-info">
-                            <h5>Hani Hijazi</h5>
-                            <p>Network and Natural language AI expert</p>
-                            <small class="text-muted">AI Research Director</small>
+                            <h5 data-translate="teamHaniTitle">Hani Hijazi</h5>
+                            <p data-translate="teamHaniDegree">Network and Natural language AI expert</p>
+                            <small class="text-muted" data-translate="teamHaniRole">AI Research Director</small>
                         </div>
                     </div>
                 </div>
@@ -212,18 +323,24 @@
             <!-- Accreditation -->
             <div class="row mt-5">
                 <div class="col-12 text-center mb-4">
-                    <h3>Accreditation & Recognition</h3>
-                    <p class="text-muted">Trusted by leading legal organizations</p>
+                    <h3 data-translate="teamAccreditation">Accreditation & Recognition</h3>
+                    <p class="text-muted" data-translate="teamAccreditationSubtitle">Trusted by leading legal
+                        organizations</p>
                 </div>
                 <div class="col-md-6 text-center">
-                    <img src="https://www.smartejudge.com/images/default/OurExpertTeam/Meet_Hala_USA_Logo.png"
-                        alt="Meet Hala USA" class="accreditation-logo">
-                    <p class="mt-2">Meet Hala USA</p>
+                    <a href="https://meethalausa.com/listing.php?id=3ce3bd302af473f2307962dd07653315" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://www.smartejudge.com/images/default/OurExpertTeam/Meet_Hala_USA_Logo.png"
+                            alt="Meet Hala USA" class="accreditation-logo">
+                        <p class="mt-2">Meet Hala USA</p>
+                    </a>
                 </div>
                 <div class="col-md-6 text-center">
-                    <img src="https://www.smartejudge.com/images/default/OurExpertTeam/JRCLS_logo_003.png"
-                        alt="JRCLS LAW SOCIETY" class="accreditation-logo">
-                    <p class="mt-2">JRCLS LAW SOCIETY</p>
+                    <a href="https://jrcls.org/u/mr3s5z/#/about" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.smartejudge.com/images/default/OurExpertTeam/JRCLS_logo_003.png"
+                            alt="JRCLS LAW SOCIETY" class="accreditation-logo">
+                        <p class="mt-2">JRCLS LAW SOCIETY</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -238,21 +355,189 @@
                         class="img-fluid rounded shadow">
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="text-white mb-4">Why Trust Smart E-Judge LLC?</h2>
+                    <h2 class="text-white mb-4" data-translate="whyTrustUs">Why Trust Smart E-Judge LLC?</h2>
                     <ul class="trust-list text-white">
-                        <li><strong>Innovative AI Expertise:</strong> Our AI systems analyze patterns of successful
-                            applications, enhanced by Judge Alsamhan's profound legal insights.</li>
-                        <li><strong>Legal Mastery:</strong> Led by Judge Alsamhan, our team possesses unparalleled depth
-                            in EB2 NIW applications.</li>
-                        <li><strong>Efficiency & Accuracy:</strong> Melding AI insights with legal prowess guarantees
-                            impeccable applications.</li>
-                        <li><strong>Transparent Process:</strong> Get real-time AI updates on your application status
-                            and predictive outcome insights.</li>
-                        <li><strong>Proven Track Record:</strong> Over 500 successful cases with a 98% success rate.
-                        </li>
+                        <li data-translate="trustInnovativeAI"><strong>Innovative AI Expertise:</strong> Our AI systems
+                            analyze patterns of successful applications, enhanced by Judge Alsamhan's profound legal
+                            insights.</li>
+                        <li data-translate="trustLegalMastery"><strong>Legal Mastery:</strong> Led by Judge Alsamhan,
+                            our team possesses unparalleled depth in EB2 NIW applications.</li>
+                        <li data-translate="trustEfficiency"><strong>Efficiency & Accuracy:</strong> Melding AI insights
+                            with legal prowess guarantees impeccable applications.</li>
+                        <li data-translate="trustTransparent"><strong>Transparent Process:</strong> Get real-time AI
+                            updates on your application status and predictive outcome insights.</li>
+                        <li data-translate="trustProven"><strong>Proven Track Record:</strong> Over 500 successful cases
+                            with a 98% success rate.</li>
                     </ul>
-                    <a href="#contact" class="btn btn-light mt-4">Get Started Today</a>
+                    <a href="https://calendly.com/eyad-ayed/consultation?month=2025-08" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-light mt-4" data-translate="getStartedToday">Get
+                        Started Today</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Immigration Success Stories Slider -->
+    <section id="immigration-stories" class="immigration-stories-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-white">Immigration Success Stories</h2>
+                    <p class="lead text-white">Real people, real success stories - celebrating the journey of
+                        immigration</p>
+                </div>
+            </div>
+
+            <!-- Carousel/Slider -->
+            <div id="immigrationCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#immigrationCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#immigrationCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#immigrationCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#immigrationCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#immigrationCarousel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-content">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <img src="/young-family-three-posing-together-before-travel-vacation.jpg"
+                                        alt="Family Immigration Success" class="carousel-image">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="carousel-text">
+                                        <h3>Family Reunification</h3>
+                                        <p>Celebrating the moment when families are reunited after successful
+                                            immigration processes. Every smile represents a dream come true.</p>
+                                        <div class="story-stats">
+                                            <div class="stat-item">
+                                                <span class="stat-number">500+</span>
+                                                <span class="stat-label">Families Reunited</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <img src="/pair-happy-students-gown-looking-globe-white.jpg"
+                                        alt="Graduation Celebration" class="carousel-image">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="carousel-text">
+                                        <h3>Academic Achievements</h3>
+                                        <p>Students achieving their dreams through education visas and academic
+                                            excellence. Knowledge knows no borders.</p>
+                                        <div class="story-stats">
+                                            <div class="stat-item">
+                                                <span class="stat-number">200+</span>
+                                                <span class="stat-label">Students Successfully Placed</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <img src="/medium-shot-people-travel-agency.jpg" alt="Business Success"
+                                        class="carousel-image">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="carousel-text">
+                                        <h3>Business Immigration Success</h3>
+                                        <p>Entrepreneurs building successful businesses and contributing to the American
+                                            economy through innovation and hard work.</p>
+                                        <div class="story-stats">
+                                            <div class="stat-item">
+                                                <span class="stat-number">150+</span>
+                                                <span class="stat-label">Businesses Established</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                        alt="Community Gathering" class="carousel-image">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="carousel-text">
+                                        <h3>Community Building</h3>
+                                        <p>Immigrants coming together to build strong, vibrant communities that enrich
+                                            American society and culture.</p>
+                                        <div class="story-stats">
+                                            <div class="stat-item">
+                                                <span class="stat-number">1000+</span>
+                                                <span class="stat-label">Lives Transformed</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <img src="/young-friends-together-outdoors.jpg" alt="Celebration Moment"
+                                        class="carousel-image">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="carousel-text">
+                                        <h3>Celebration Moments</h3>
+                                        <p>Every successful immigration case is a reason to celebrate. These moments of
+                                            joy and achievement inspire us to continue our mission.</p>
+                                        <div class="story-stats">
+                                            <div class="stat-item">
+                                                <span class="stat-number">98%</span>
+                                                <span class="stat-label">Success Rate</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#immigrationCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#immigrationCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
@@ -270,17 +555,46 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6">
+                    <h3 class="section-title mb-4">Our Immigration Services</h3>
                     <ul class="services-list">
-                        <li><i class="fas fa-check-circle"></i> Automated Document Review and Assembly</li>
-                        <li><i class="fas fa-check-circle"></i> Predictive Outcome Analysis</li>
-                        <li><i class="fas fa-check-circle"></i> Tailored Legal Strategy using AI data</li>
-                        <li><i class="fas fa-check-circle"></i> Continuous Application Monitoring</li>
-                        <li><i class="fas fa-check-circle"></i> AI-Enhanced Interview Preparation</li>
-                        <li><i class="fas fa-check-circle"></i> Real-time Application Status Updates</li>
-                        <li><i class="fas fa-check-circle"></i> Personalized Case Strategy</li>
-                        <li><i class="fas fa-check-circle"></i> 24/7 AI Support System</li>
+                        <li>
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="service-content">
+                                <h5>E2 Visa</h5>
+                                <p>Investor visa for entrepreneurs looking to start or purchase a business in the United
+                                    States. Our expert team ensures your investment meets all requirements and maximizes
+                                    your chances of approval.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                            <div class="service-content">
+                                <h5>EB1 - Extraordinary Ability</h5>
+                                <p>For individuals with extraordinary ability in sciences, arts, education, business, or
+                                    athletics. We help showcase your achievements and demonstrate your exceptional
+                                    contributions to your field.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-award"></i>
+                            <div class="service-content">
+                                <h5>EB2-NIW - National Interest Waiver</h5>
+                                <p>Advanced degree professionals and individuals with exceptional ability can bypass the
+                                    labor certification requirement. Our AI-powered analysis optimizes your petition for
+                                    maximum success.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-briefcase"></i>
+                            <div class="service-content">
+                                <h5>PERM - Labor Certification</h5>
+                                <p>Employment-based green card process requiring labor certification. We navigate the
+                                    complex requirements and ensure compliance with Department of Labor regulations.</p>
+                            </div>
+                        </li>
                     </ul>
-                    <a href="#contact" class="btn btn-danger mt-4">Book a Consultation</a>
+                    <a href="https://calendly.com/eyad-ayed/consultation?month=2025-08" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-danger mt-4">Book a Consultation</a>
                 </div>
                 <div class="col-lg-6 text-center">
                     <img src="https://www.smartejudge.com/images/default/OurAIDrivenServices/our_ai_driven_Services_001.png"
@@ -430,6 +744,48 @@
             </div>
         </div>
     </section>
+    <section class="services-section">
+        <h2 class="section-title">Our Immigration Services</h2>
+        <div class="services-container">
+
+            <div class="service-card">
+                <i class="fas fa-briefcase service-icon"></i>
+                <h3 class="service-title">E2 Visa</h3>
+                <p class="service-desc">
+                    Assistance in obtaining the E2 Investor Visa for entrepreneurs and investors seeking to establish a
+                    business in the USA.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-user-tie service-icon"></i>
+                <h3 class="service-title">EB1</h3>
+                <p class="service-desc">
+                    Expert guidance for the EB1 Visa, designed for individuals with extraordinary ability in their
+                    professional fields.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-globe service-icon"></i>
+                <h3 class="service-title">EB2-NIW</h3>
+                <p class="service-desc">
+                    Support for EB2-NIW petitions, ideal for professionals with advanced degrees or exceptional ability
+                    contributing to the U.S. national interest.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-file-contract service-icon"></i>
+                <h3 class="service-title">PERM</h3>
+                <p class="service-desc">
+                    Complete assistance with the PERM labor certification process, a key step for employment-based green
+                    card applications.
+                </p>
+            </div>
+
+        </div>
+    </section>
 
     <!-- Map Section -->
     <section id="map" class="map-section py-5">
@@ -506,11 +862,21 @@
                                 </p>
                             </div>
                             <div class="social-icons mb-4">
-                                <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
-                                <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                                <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.facebook.com/smartejudgellc" target="_blank"
+                                    rel="noopener noreferrer" class="social-icon" title="Facebook"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/smartejudge/" target="_blank"
+                                    rel="noopener noreferrer" class="social-icon" title="Instagram"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/smartejudge" target="_blank"
+                                    rel="noopener noreferrer" class="social-icon" title="LinkedIn"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <a href="https://api.whatsapp.com/send?phone=18016912890" target="_blank"
+                                    rel="noopener noreferrer" class="social-icon" title="WhatsApp"><i
+                                        class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.youtube.com/@Smarte-Judge/featured" target="_blank"
+                                    rel="noopener noreferrer" class="social-icon" title="YouTube"><i
+                                        class="fab fa-youtube"></i></a>
                             </div>
                         </div>
 
@@ -541,11 +907,18 @@
                 <div class="col-lg-4 mb-4">
                     <h5>Connect With Us</h5>
                     <div class="footer-social">
-                        <a href="#" class="text-white mx-2" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-white mx-2" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white mx-2" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-white mx-2" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="text-white mx-2" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/smartejudgellc" target="_blank" rel="noopener noreferrer"
+                            class="text-white mx-2" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/smartejudge/" target="_blank" rel="noopener noreferrer"
+                            class="text-white mx-2" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/smartejudge" target="_blank" rel="noopener noreferrer"
+                            class="text-white mx-2" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=18016912890" target="_blank"
+                            rel="noopener noreferrer" class="text-white mx-2" title="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@Smarte-Judge/featured" target="_blank"
+                            rel="noopener noreferrer" class="text-white mx-2" title="YouTube"><i
+                                class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -572,8 +945,8 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="https://www.smartejudge.com/images/team/judge-eyad.jpg" alt="Judge Eyad Alsamhan"
-                                class="img-fluid rounded">
+                            <img src="https://www.smartejudge.com/images/default/OurExpertTeam/Eyad_Prof_Photo_008.jpg"
+                                alt="Judge Eyad Alsamhan" class="img-fluid rounded">
                         </div>
                         <div class="col-md-8">
                             <h6>Ph.D | LL.M | B.A. (J.D.)</h6>
@@ -605,7 +978,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="https://www.smartejudge.com/images/team/attorney-muntaha.jpg"
+                            <img src="https://www.smartejudge.com/images/default/OurExpertTeam/Muntaha_Photo_011.jpg"
                                 alt="Attorney Muntaha Hijazi" class="img-fluid rounded">
                         </div>
                         <div class="col-md-8">
@@ -638,7 +1011,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="https://www.smartejudge.com/images/team/mohammad-al-nobani.jpg"
+                            <img src="https://www.smartejudge.com/images/default/OurExpertTeam/Mohammad_Photo_006.jpg"
                                 alt="Mohammad Al Nobani" class="img-fluid rounded">
                         </div>
                         <div class="col-md-8">
@@ -671,8 +1044,8 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="https://www.smartejudge.com/images/team/hani-hijazi.jpg" alt="Hani Hijazi"
-                                class="img-fluid rounded">
+                            <img src="https://www.smartejudge.com/images/default/OurExpertTeam/Hani002.jpg"
+                                alt="Hani Hijazi" class="img-fluid rounded">
                         </div>
                         <div class="col-md-8">
                             <h6>Network and Natural language AI expert</h6>
